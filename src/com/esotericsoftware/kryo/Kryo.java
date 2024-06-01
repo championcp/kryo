@@ -144,7 +144,7 @@ public class Kryo {
 	private int nextRegisterID;
 	private ClassLoader classLoader = getClass().getClassLoader();
 	private InstantiatorStrategy strategy = new DefaultInstantiatorStrategy();
-	private boolean registrationRequired = true;
+	private boolean registrationRequired = false;
 	private boolean warnUnregisteredClasses;
 
 	private int depth, maxDepth = Integer.MAX_VALUE;
